@@ -1,0 +1,43 @@
+{
+    "layer": "top",
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["tray","backlight","custom/pwr","battery", "clock"],
+    
+    "sway/workspaces": {
+        "format": "{index}",
+        "disable-scroll": false
+    },
+    
+    "sway/window": {
+        "max-length": 50
+    },
+    
+    "battery": {
+	"interval": 60,
+	"states": {
+		"warning": 30,
+		"critical": 15
+	},
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%a %d %b %H:%M}"
+    },
+    "backlight": {
+	"device": "intel_backlight",
+	"format": "{percent}% {icon}",
+	"format-icons": [""]
+    },
+    "tray": {
+	"icon-size": 21,
+	"spacing": 10
+    },
+    "custom/pwr": {
+    	"exec" : "~/Documents/pwr.sh",
+	"interval": 5
+    }
+}     

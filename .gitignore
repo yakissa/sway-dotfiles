@@ -1,0 +1,4 @@
+#avoid token grab 
+vesktop/sessionData/
+/Cache/
+/*.log
